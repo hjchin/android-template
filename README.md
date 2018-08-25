@@ -19,3 +19,21 @@ The idea wish list.
 
 
 
+## Snippet
+Some copy-and-paste code snippet for common tasks
+
+### Singleton class with getInstance(context: Context) function
+
+    companion object {
+
+        @Volatile private var INSTANCE: SingletonClass? = null
+
+        fun getInstance(context: Context): SingletonClass {
+            return INSTANCE ?: synchronized(this) {
+                SingletonClass(context).also {
+                    INSTANCE = it
+                }
+            }
+        }
+
+    }
