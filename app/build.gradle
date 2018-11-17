@@ -51,6 +51,8 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$lifecycle_version" // use -ktx for Kotlin
     kapt "android.arch.lifecycle:compiler:$lifecycle_version"
 
+    //implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.github.clans:fab:1.6.4'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
